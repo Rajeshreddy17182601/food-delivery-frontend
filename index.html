@@ -1,41 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>Sorting Visualizer</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+    <link rel="stylesheet" href="task 1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
 </head>
 
 <body>
-
-<div class="header">Sorting Visualizer</div>
-
-<div class="controls">
-    <div class="control-box">
-        <button id="newArray">New Array</button>
+    <div id="navbar">
+        <a id="bro-kart" href="#"> bro-kart.in </a>
+        <a id="account" href="#"> Account </a>
+        <a id="cart" href="#"> My Cart </a>
+        <a id="contact" href="#"> Contact Us </a>
+        <input placeholder="search Bro-kart.in">
+        <button>Search</button>
     </div>
 
-    <div class="control-box">
-        <label>Size (Bars)</label><br>
-        <input type="range" id="size" min="10" max="120" value="60">
+    <div id="nav-down">
+        <ul>
+            <span class="material-symbols-outlined" style="color: white;">menu </span>
+            <li>All</li>
+            <li>Mobiles</li>
+            <li>Laptops</li>
+            <li>Chargers</li>
+            <li>Books</li>
+            <li>Electronics</li>
+            <li>Home & Kitchen</li>
+        </ul>
     </div>
 
-    <div class="control-box">
-        <label>Speed</label><br>
-        <input type="range" id="speed" min="1" max="100" value="50">
+    <div id="main_banner">
+        <img src="Great sale.jpg" alt="Mobile phone">
     </div>
 
-    <div class="control-box"><button onclick="bubbleSort()">Bubble</button></div>
-    <div class="control-box"><button onclick="selectionSort()">Selection</button></div>
-    <div class="control-box"><button onclick="insertionSort()">Insertion</button></div>
-    <div class="control-box"><button onclick="mergeSortStart()">Merge</button></div>
-    <div class="control-box"><button onclick="quickSortStart()">Quick</button></div>
-</div>
+    <div id="total-div">
+        <div class="box mobile-box">
+            <b class="box-title"><br>Mobile Phones at low cost</b>
+            <img src="iphone.png" alt="Mobile 1">
+            <img src="mobile 2.jpg" alt="Mobile 2">
+            <img src="mobile 3.jpg" alt="Mobile 3">
+            <img src="mobile 4.jpg" alt="Mobile 4">
+        </div>
 
-<div class="tip">Tip: Increase speed slider for faster sorting.</div>
+        <div class="box mobile-box">
+            <b class="box-title"><br>Furniture for deal of the day</b>
+            <img src="sofa.avif" alt="Sofa">
+            <img src="chair.webp" alt="Chair">
+            <img src="dining table.webp" alt="Dining table">
+            <img src="almirah.jpg" alt="Almirah">
+        </div>
 
-<div class="visualizer" id="visualizer"></div>
+        <div class="box mobile-box">
+            <b class="box-title"><br>Home appliances upto 40% off</b>
+            <img src="AC.avif" alt="A.C.">
+            <img src="fridge.webp" alt="fridge">
+            <img src="TV.webp" alt="T.V.">
+            <img src="Washing Machine.jpg" alt="Washing Machine">
+        </div>
 
-<script src="script.js"></script>
+        <div class="box mobile-box">
+            <b class="box-title"><br>Starting at ₹49 | Home essentials</b>
+            <img src="pen boxes.jpg" alt="Pen box">
+            <img src="toothpaste.jpg" alt="Toothpaste">
+            <img src="hanger.jpg" alt="Hanger">
+            <img src="spectacles.webp" alt="Spectacles">
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="footer">
+        <br>
+         <footer style="text-align: center;">&copy; 2026 Website by bro-kart.in . All rights reserved</footer>
+         <br>
+         <br>
+    </div>
+
 </body>
+
 </html>
