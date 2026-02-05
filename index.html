@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sorting Visualizer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="header">Sorting Visualizer</div>
+
+<div class="controls">
+    <div class="control-box">
+        <button id="newArray">New Array</button>
+    </div>
+
+    <div class="control-box">
+        <label>Size (Bars)</label><br>
+        <input type="range" id="size" min="10" max="120" value="60">
+    </div>
+
+    <div class="control-box">
+        <label>Speed</label><br>
+        <input type="range" id="speed" min="1" max="100" value="50">
+    </div>
+
+    <div class="control-box"><button onclick="bubbleSort()">Bubble</button></div>
+    <div class="control-box"><button onclick="selectionSort()">Selection</button></div>
+    <div class="control-box"><button onclick="insertionSort()">Insertion</button></div>
+    <div class="control-box"><button onclick="mergeSortStart()">Merge</button></div>
+    <div class="control-box"><button onclick="quickSortStart()">Quick</button></div>
+</div>
+
+<div class="tip">Tip: Increase speed slider for faster sorting.</div>
+
+<div class="visualizer" id="visualizer"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
